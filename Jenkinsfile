@@ -6,5 +6,10 @@ pipeline {
         git(url: 'https://github.com/itzmor/firstproject', branch: 'master', poll: true)
       }
     }
+    stage('print message') {
+      steps {
+        echo 'hghgfdhgfdhgdfh'
+      }
+    }
   }
 }
