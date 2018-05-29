@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run Docker') {
       steps {
-        sh 'docker build .'
+        sh 'docker build -f Dockerfile_0 .'
       }
     }
   }
