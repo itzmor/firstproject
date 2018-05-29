@@ -6,9 +6,9 @@ pipeline {
         git(url: 'https://github.com/itzmor/firstproject', branch: 'master', poll: true)
       }
     }
-    stage('print message') {
+    stage('Run Docker') {
       steps {
-        echo 'hghgfdhgfdhgdfh'
+        sh 'docker build .'
       }
     }
   }
