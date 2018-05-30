@@ -6,6 +6,10 @@ pipeline {
         git(url: 'https://github.com/itzmor/firstproject', branch: 'master', poll: true)
       }
     }
+    stage('createDockerConnection') {
+      steps {
+
+      }
     stage('example') {
       steps {
 	echo 'Hello'

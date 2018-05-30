@@ -1,4 +1,4 @@
-FROM node:7-onbuild
+FROM perl
 RUN mkdir /runfolder
 COPY script.pl /runfolder
 WORKDIR /runfolder
