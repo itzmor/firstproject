@@ -8,7 +8,7 @@ pipeline {
     }
     stage('RunDocker7') {
       steps {
-         sh '/usr/bin/docker --version' 
+         sh 'docker --version' 
       }
     }
   }
