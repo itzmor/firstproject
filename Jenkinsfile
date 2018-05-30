@@ -9,7 +9,7 @@ pipeline {
     stage('RunDocker1') {
       agent any
       steps {
-         /usr/bin/docker --version 
+         sh '/usr/bin/docker --version' 
       }
     }
   }
