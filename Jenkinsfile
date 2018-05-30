@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    dockerfile true
-  }
+  agent any
   stages {
     stage('getFiles') {
       steps {
@@ -11,10 +9,9 @@ pipeline {
     stage('RunDocker') {
       agent any
       steps {
-        sh '''
-
-
-/usr/bin/docker --version'''
+         bash '''#!/bin/bash
+                 /usr/bin/docker --version 
+         '''
       }
     }
   }
