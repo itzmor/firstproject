@@ -1,14 +1,20 @@
 pipeline {
-  agent { dockerfile true }
+  agent {
+    dockerfile true
+  }
   stages {
     stage('getFiles') {
       steps {
         git(url: 'https://github.com/itzmor/firstproject', branch: 'master', poll: true)
       }
     }
-    stage('example') {
+    stage('RunDocker') {
+      agent any
       steps {
-	echo 'Hello'
+        sh '''
+
+
+/usr/bin/docker --version'''
       }
     }
   }
