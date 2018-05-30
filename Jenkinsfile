@@ -7,7 +7,6 @@ pipeline {
       }
     }
     stage('RunDocker1') {
-      agent any
       steps {
          sh '/usr/bin/docker --version' 
       }
