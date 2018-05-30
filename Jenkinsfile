@@ -6,7 +6,7 @@ pipeline {
         git(url: 'https://github.com/itzmor/firstproject', branch: 'master', poll: true)
       }
     }
-    stage('RunDocker5') {
+    stage('RunDocker6') {
       steps {
          sh '/usr/bin/docker --version' 
       }
