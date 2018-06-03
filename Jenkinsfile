@@ -3,4 +3,3 @@ node("docker-test")
   stage("unit test") {
     sh "docker --version"
   }
-}
