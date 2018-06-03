@@ -1,4 +1,4 @@
-node("docker-test1") { 
+node("docker-test") { 
   checkout scm
   stage("unit test") {
     sh "docker --version"
