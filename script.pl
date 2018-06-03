@@ -1,1 +1,1 @@
-print "NNNNNN";
+print "OOOOOO";
