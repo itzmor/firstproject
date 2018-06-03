@@ -1,1 +1,1 @@
-print "KKKKKK";
+print "LLLLLL";
